@@ -32,13 +32,11 @@ def main():
     client = get_client(api_key)
 
     task = "Provide list of job openings for Senior software developer for C#, ASP.Net, Azure, Devops, AI, Data, Cyber security"
-    context = "in Hyderabad India location who are ready to provide work from home posted in the last 3 months having minimum salary of 4000000 lacs"
-    returnFormat = "Json format should have company name, Contact Details, Salary expectations, Employee Reviews"
+    context = "in Hyderabad India location who are ready to provide work from home posted in the last 90 days having minimum salary of 4000000 lacs"
+    returnFormat = "In Json format should have company name, Contact Details, Salary expectations, Employee Reviews"
 
     user_content = f"""
-    Task: {task},
-    Context: {context},
-    Format: {returnFormat},
+    {task} {context}, {returnFormat}
     """
 
     # Initialize conversation history with system prompt and default user content
