@@ -1,0 +1,2 @@
+streamlit>=1.38.0
+mistralai>=2.5.0,<3.0.0  # avoid 2.4.6 (pulled from PyPI: contained malicious code, May 2026)
